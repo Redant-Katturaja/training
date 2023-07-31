@@ -1,0 +1,22 @@
+#menubar{
+    margin-top: 7px;
+}
+/* .sidenav{
+    width: 30%;
+}
+.table{
+    width: 70%;
+} */
+.row{
+    width: 100%;
+    margin-left:-15px;
+    margin-top: 5%;
+}
+.sub{
+    margin-left: 30px;
+}
+.navbar1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/bootstrap_task.css" />
+</head>
+<body>
+
+ <nav class="navbar navbar1 bg-info nav-light navbar-fixed-top ">
+    
+      <ul class="nav navbar-nav" style="display: flex;justify-content: space-between;width: 50%;">
+        <li style="margin: 15px;width: 50%;"><i class="fa fa-bars " style="font-size:16px"></i></li>
+        <li><img src="./kartlogo.svg" alt="Image" style="height: 70%;"></li>
+        <!-- <li class="active  "><a href="#">Kartoffel Technology</a></li>  -->
+    </ul> 
+        <ul class="nav navbar-nav navbar-right nav1">
+            <li><a href="#"><i  class="fa">&#xf2ba;</i> Contact</a></li>
+        <li><a href="#"><i class="fa fa-solid fa-phone"></i>Support</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i style="font-size:20px" class="fa">&#xf2bd;</i>
+              Account
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Setting</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+        </ul>
+      </ul>
+  </nav>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidenav">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+         <a href="#" class="w3-bar-item"><i class="fa-solid fa-gauge"></i></i>Dash Board</a>
+          <a href="#" class="w3-bar-item w3-button"><i class=" fa fa-solid fa-user"></i>User</a>
+          <a href="#" class="w3-bar-item w3-button"> <i class="fa-solid fa-message"></i></i>Message</a>
+          <a href="#" class="w3-bar-item w3-button"><i class="fa-solid fa-gear"></i>Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="table">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Katturaja</td>
+                  <td>katturaja260398@gmail.com</td>
+                  <td>
+                    <button type="button" class=" badge rounded-pill bg-primary btn btn-success active">Active </button></td>
+                  <td><span><button type="button" class="btn btn-primary" >Edit</button></span>
+                      <span><button type="button" class="btn btn-info" >View</button></span>
+                      <span><button type="button" class="btn btn-danger" >Delete</button></span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ashwin</td>
+                    <td>ashwin123@gmail.com</td>
+                    <td><button type="button" class=" badge rounded-pill bg-primary btn btn-danger" disabled>Inactive </button></td>
+                    <td><span><button type="button" class="btn btn-primary" >Edit</button></span>
+                      <span><button type="button" class="btn btn-info" >View</button></span>
+                      <span><button type="button" class="btn btn-danger" >Delete</button></span></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Palani</td>
+                    <td>palani123@gmail.com</td>
+                    <td><button type="button" class=" badge rounded-pill bg-primary btn btn-success active" >Active </button</td>
+                    <td><span><button type="button" class="btn btn-primary" >Edit</button></span>
+                      <span><button type="button" class="btn btn-info" >View</button></span>
+                      <span><button type="button" class="btn btn-danger" >Delete</button></span></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Gokul</td>
+                    <td>gokul123@gmail.com</td>
+                    <td><button type="button" class=" badge rounded-pill bg-primary btn btn-danger" disabled>Inactive </button</td>
+                    <td><span><button type="button" class="btn btn-primary" >Edit</button></span>
+                      <span><button type="button" class="btn btn-info" >View</button></span>
+                      <span><button type="button" class="btn btn-danger" >Delete</button></span></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div> 
+        </div>
+        <form action="">
+          <h2 class="text-dark">User Info</h2>
+      <div>
+        <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name"  required>
+      </div>
+      <div class="mb-3 ">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <div class="mb-3 ">
+        <label for="date">DOB</label>
+        <input type="date" class="form-control" id="date" placeholder="Enter DOB" name="date" required>
+      </div> <br>
+      <div>
+        <span> <label class="text-dark" for="Status">Status</label></span>
+        <span class="form-check "><input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+          <label class="form-check-label" for="radio1">Active</label></span>
+          <span class="form-check "><input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+            <label class="form-check-label" for="radio1">Inactive</label></span>
+      </div><br>
+      
+       <div >  <button type="submit" class="btn sub btn-primary">Submit</button></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
